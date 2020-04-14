@@ -10,4 +10,6 @@ urlpatterns = [
     path('profile/', app1.views.profile, name= "profile"),
     path('hobby/', app1.views.hobby, name= "hobby"),
     path('etc/', app2.views.etc, name= "etc"),
+    path('hobby/suin/',app1.views.suin,name="suin"),
+    path('hobby/alcohol/',app1.views.alcohol,name="alcohol" )
 ]

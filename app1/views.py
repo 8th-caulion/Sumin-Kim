@@ -6,7 +6,12 @@ def home(request):
 
 def profile(request):
     return render(request,'profile.html')
-    
+
 def hobby(request):
     return render(request,'hobby.html')
 
+def suin(request):
+    return render(request,"suin.html")
+
+def alcohol(request):
+    return render(request,"alcohol.html")

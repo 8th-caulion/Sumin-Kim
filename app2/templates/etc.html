@@ -1,7 +1,13 @@
 {% extends 'base.html'%}
 <body>
     {% block contents %}
-    <h3>문수인최고</h3>    
+    <header> 
+        <h2 style=" color:palevioletred;">수민이에게 하고싶은 말!</h2>
+        ​ <input type="text" id="input">
+        <button onclick="input()">입력</button>
+   
+        
+    </header>
     <h5><a href="{% url 'home'%}">HOME으로 돌아가기</a></h5>
     {% endblock %}
 </body>

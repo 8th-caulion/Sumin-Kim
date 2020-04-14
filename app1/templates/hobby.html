@@ -1,8 +1,11 @@
 {% extends 'base.html'%}
 <body>
     {% block contents %}
-    <h2>나의 취미는?</h2>
-    <h3>문수인 덕질하기</h3>
+    <h2 style=" color:palevioletred;" >나의 취미는?</h2>
+    <h3>1.문수인 덕질하기</h3>
+    <h4><a href="{% url 'suin'%}">All about 수인</a></h4>
+    <h3>2.알코올에 취하기~</h3>
+    <h4><a href="{% url 'alcohol'%}">수민이의 음주생활</a></h4>
     <h5><a href="{% url 'home'%}">HOME으로 돌아가기</a></h5>
     {% endblock %}
 </body>

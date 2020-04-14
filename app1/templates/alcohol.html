@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+<body>
+    {% block contents %}
+    <header> <h2 style=" color:palevioletred;">수민이의 음주생활!</h2> 
+       
+    </header>
+    <h3>1.좋아하는 주종</h3>
+    <h4>소맥, 맥주, 와인, 막걸리 등등..</h4>
+    <h3>2.싫어하는 주종</h3>
+    <h4>소주,칵테일.. 극도로 쓰거나 극도로 단 술^^,,</h4>
+    <h5><a href="{% url 'home'%}">HOME으로 돌아가기</a></h5>
+    {% endblock %}
+</body>
+

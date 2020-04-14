@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+
+<body>
+    {% block contents %}
+ 
+    <h1>All about 수민</h1>
+    
+    <h4><a href="{% url 'profile'%}">PROFILE</a></h4>
+    <h4><a href="{% url 'hobby'%}">HOBBY</a></h4>
+    <h4><a href="{% url 'etc'%}">ETC</a></h4>
+    
+    {% endblock %}
+</body>

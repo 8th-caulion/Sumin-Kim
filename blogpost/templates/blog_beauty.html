@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = "container">
+    <form action="{% url 'create_blog' %}" method="post">
+        {% csrf_token %}
+            <br>
+            수면시간 
+            <input type="text" placeholder=" 숫자만 기입해주세요"name="=sleep"><br><br>
+            
+            오늘 물 2L 마셨나요? <input type="radio" name="chk_info" value="HTML">
+            <br><br>
+
+            사용한 화장품
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="ex.바이오더마 하이드라비오 에센스 로션" name="cosmetics"></textarea>
+            <br>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">오늘의 피부보고서</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="ex.좁쌀 여드름이 올라왔고 속당김이 좀 심했다" name="b_diary"></textarea>
+            </div>
+     
+          </form>
+         <br> 
+        <input type="submit" value="Submit" class ="btn btn-success">
+</div>
+{% endblock %}

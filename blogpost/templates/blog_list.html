@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- <br>
+<span style=" font: italic bold 1.5em/1em Georgia, serif ;">
+    <h1> &emsp;&emsp;&emsp;&emsp;&nbsp;&ensp; Daily Diary</h1>    
+</span> -->
+
+<br>
+<span style=" font: italic bold 1.5em/1em Georgia, serif ;">
+    <h1>&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp; Daily Diary</h1>    
+</span>
+{%for blog in blogs%}
+
+<div class = "container">
+Title: {{blog.title}} <br>
+Text: {{blog.text}} <br>
+Date: {{blog.date}}
+<hr>
+</div>
+{%endfor%}
+{% endblock %}
